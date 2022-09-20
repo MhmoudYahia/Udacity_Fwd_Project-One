@@ -4,6 +4,7 @@
 }
 body {
   margin: 0;
+  background-color: #0b2d60;
 }
 .landing-page {
   width: 100%;
@@ -33,6 +34,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -45,13 +47,15 @@ nav ul li:hover {
 }
 nav ul li a {
   text-decoration: none;
+  color: #000;
 }
 .section {
-  padding: 70px;
+  padding: 35px;
   background-color: #0b2d60;
+  margin-bottom: 90px;
 }
 .section.active {
-  background-color: #4d6c99;
+  background-color: #354357;
 }
 .section h1 {
   color: cornsilk;
@@ -62,7 +66,7 @@ nav ul li a {
 }
 footer {
   padding: 130px;
-  background-color: aqua;
+  color: white;
   font-size: x-large;
   font-weight: bold;
 }
