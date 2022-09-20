@@ -49,6 +49,22 @@ nav ul li a {
   text-decoration: none;
   color: #000;
 }
+.scrollTop {
+  padding: 8px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  background-color: cadetblue;
+  border: 0;
+  border-radius: 7px;
+  font-weight: bold;
+  display: none;
+}
+.scrollTop.active {
+  display: block;
+}
+
 .section {
   padding: 35px;
   background-color: #0b2d60;

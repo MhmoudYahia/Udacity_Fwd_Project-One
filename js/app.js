@@ -6,6 +6,9 @@ const linksNav = [...document.querySelectorAll("nav ul li a")];
 //select sections list
 const sectionsList = [...document.querySelectorAll(".section")];
 
+//select topbutton
+const topButton = document.querySelector(".scrollTop");
+
 //add class active to the viewed section
 window.onscroll = function () {
   // offset Y for the window
@@ -31,6 +34,13 @@ window.onscroll = function () {
       section.classList.remove("active");
     }
   }
+
+  //display the top button only if the pagr scrolled down
+  if (windowOffsetTop) {
+    topButton.classList.add("active");
+  } else {
+    topButton.classList.remove("active");
+  }
 };
 
 //scroll to the link on click(event)
@@ -44,4 +54,10 @@ linksNav.forEach((link, index) => {
     //prevent defualt action
     e.preventDefault();
   });
+});
+
+// scroll to top when clicking top button
+topButton.addEventListener("click", () => {
+  //top top
+  window.scrollTo(0, 0);
 });
