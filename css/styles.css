@@ -77,7 +77,7 @@ nav ul li:hover a {
 .section {
   padding: 35px;
   background-color: #0b2d60;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 .section.active {
   background-color: #354357;
