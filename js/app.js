@@ -58,18 +58,27 @@ linksNav.forEach((link, index) => {
   //add the event
   link.addEventListener("click", (e) => {
     //scroll to function
-    //38 =>> nav height 
-    window.scrollTo({top:sectionsList[index].offsetTop - 38,behavior:"smooth"});
+    //38 =>> nav height
+    window.scrollTo({
+      top: sectionsList[index].offsetTop - 38,
+      behavior: "smooth",
+    });
 
     //prevent defualt action
     e.preventDefault();
 
-    //smoth scrolling
+    linksNav.forEach((link2) => {
+      if (link2.classList.contains("active")) {
+        link2.classList.remove("active");
+      }
+    });
+
+    link.classList.add("active");
   });
 });
 
 // scroll to top when clicking top button
 topButton.addEventListener("click", () => {
   //top top
-  window.scrollTo({top:0,behavior:"smooth"});
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });

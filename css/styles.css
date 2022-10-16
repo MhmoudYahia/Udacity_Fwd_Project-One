@@ -47,14 +47,18 @@ nav ul li {
   cursor: pointer;
   color: #fff;
   font-weight: 600;
+  caret-color: transparent;
 }
-nav ul li:hover {
+ {
+}
+nav ul li:hover,
+nav ul li.active {
   background-color: cornsilk;
   color: #0b2d60;
 }
-nav ul li:hover {
+/* nav ul li:hover {
   color: #0b2d60;
-}
+} */
 .scrollTop {
   padding: 8px;
   position: fixed;
