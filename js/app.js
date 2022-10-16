@@ -58,16 +58,18 @@ linksNav.forEach((link, index) => {
   //add the event
   link.addEventListener("click", (e) => {
     //scroll to function
-    //38 =>> nav height
-    window.scrollTo(0, sectionsList[index].offsetTop - 38);
+    //38 =>> nav height 
+    window.scrollTo({top:sectionsList[index].offsetTop - 38,behavior:"smooth"});
 
     //prevent defualt action
     e.preventDefault();
+
+    //smoth scrolling
   });
 });
 
 // scroll to top when clicking top button
 topButton.addEventListener("click", () => {
   //top top
-  window.scrollTo(0, 0);
+  window.scrollTo({top:0,behavior:"smooth"});
 });
